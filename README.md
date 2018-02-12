@@ -20,27 +20,27 @@ To create an app for the cloud, in this lab you will use an open toolchain in th
 ### Library server (Java Backend)
 For the sake of time, you will not create the Library service on your own during this lab, but instead use an instance provided to you.
 
-If you are interested in how to create the Library service and want to do that yourself – AFTER this workshop – refer to the git repo [https://github.com/florae123/library-server-java-v2](https://github.com/florae123/library-server-java-v2).
+If you are interested in how to create the Library service and want to do that yourself – AFTER this workshop – refer to the git repo [https://github.com/thomassuedbroecker/library-server-java-v2](https://github.com/thomassuedbroecker/library-server-java-v2.git).
 
 Note, that all workshop participants will share the same Library service instance. During the test, you might experience data changes introduced by other participants. The “library” is open to all registered users.
 
 #### Test the availability of the library service
 •	The common Library service instance is available at the URL
-https://library-server-demo-1.mybluemix.net/
+https://library-server-tsuedbro.au-syd.mybluemix.net/
 
 Open this URL in your browser.
 The text "... Library Backend Server is running ..." should be displayed in your browser.
 
 •	To check the connection to the Cloudant Database, add /api/books to the URL
-(https://library-server-demo-1.mybluemix.net/api/books ). You should see the books that were added to your books database as a json array.
+(https://library-server-tsuedbro.au-syd.mybluemix.net/api/books ). You should see the books that were added to your books database as a json array.
 
 
-## Deploy to Bluemix
+## Deploy to IBM Cloud Public
 
 1. Clone the app to your local environment from your terminal using the following command
 
     ```
-    git clone https://github.com/florae123/Libraryui-v2
+    git clone https://github.com/thomassuedbroecker/libraryui-v2.git)
     ```
 
 	Change to the resulting directory
@@ -51,7 +51,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 2. Open the file **manifest.yml** and change the entry **"LIBRARY_URI"** to the URL of the existing backend server, extended by **"/api"**. It should look like this:
 
       ```
-      LIBRARY_URI: "https://library-server-demo-1.mybluemix.net/api"
+      LIBRARY_URI: "https://library-server-tsuedbro.au-syd.mybluemix.net/api"
       ```
 
     Change the host name *LibraryUI-[myName]* to something unique. For example, you can replace [myName] with your name.
@@ -59,7 +59,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
     ```
     applications:
     - name: LibraryUI
-      host: libraryui-heinmueck
+      host: libraryui-[myName]
       env:
         LIBRARY_URI: "https://library-server-demo-1.mybluemix.net/api"
       memory: 256M
