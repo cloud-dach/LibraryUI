@@ -37,7 +37,12 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
 ## Deploy to IBM Cloud Public
 
-### Setup your application
+1. Setup your application
+2. Create the IBM Cloud Services and bind them to your application
+3. Deploy our application
+4. Integrate the IBM Cloud toolchain
+
+### 1. Setup your application
 
 1. Clone the app to your local environment from your terminal using the following command
 
@@ -45,10 +50,10 @@ The text "... Library Backend Server is running ..." should be displayed in your
     git clone https://github.com/thomassuedbroecker/libraryui-v2.git)
     ```
 
-	Change to the resulting directory
-	```
-  	cd libraryui-v2
-	```
+	 Change to the resulting directory
+  	```
+    	cd libraryui-v2
+  	```
 
 2. Open the file **manifest.yml** and change the entry **"LIBRARY_URI"** to the URL of the existing backend server, extended by **"/api"**. It should look like this:
 
@@ -73,7 +78,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
       ![](./images/nodejsapp.png)
 
-### Create the IBM Cloud Services and bind them to your application
+### 2. Create the IBM Cloud Services and bind them to your application
 
 You will create following services: *Watson Text-to-Speech*, *Watson Conversation* and *App ID*.
 
@@ -113,13 +118,13 @@ You will create following services: *Watson Text-to-Speech*, *Watson Conversatio
     * You can keep the default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login customization.
     * Connect it to the app LibraryUI and restage the application when prompted.
 
-### Deploy our application
+### 3. Deploy our application
 
 ```
     cf push LibraryUI
 ```
 
-### Integrate the IBM Cloud toolchain
+### 4. Integrate the IBM Cloud toolchain
 
 1. Create a toolchain for this Cloud Foundry app:
 
