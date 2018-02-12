@@ -68,7 +68,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
     - name: LibraryUI
       host: libraryui-[myName]
       env:
-        LIBRARY_URI: "https://library-server-demo-1.mybluemix.net/api"
+        LIBRARY_URI: "https://library-server-tsuedbro.au-syd.mybluemix.net/api"
       memory: 256M
       instances: 1
     ```
@@ -119,6 +119,8 @@ You will create following services: *Watson Text-to-Speech*, *Watson Conversatio
     * Connect it to the app LibraryUI and restage the application when prompted.
 
 ### 3. Deploy our application
+
+Now you will push your application into the IBM Cloud Public.
 
 ```
     cf push LibraryUI
