@@ -6,14 +6,16 @@
 # cf api https://api.ng.bluemix.net US
 
 echo "*****************************************************"
-echo "--> Ensure to deploy into the right bluemix region"
+echo "--> Ensure you are in the right IBM Cloud region"
 echo "-> Start"
 
-user="[YOUR IBM Cloud ID]"
+user="YOUR_USER_ID"
 bluemix_api="https://api.[YOUR_REGION].bluemix.net"
-organization_name="[YOUR_ORGANIZATION]"
-space_name="[YOUR_SPACE]"
+organization_name="YOUR_ORG_NAME"
+space_name="YOUR_SPACE_NAME"
+account="YOUR_ACCOUNT_ID"
 application_name="[YOUR_APPLICATION_NAME]"
+resourcegroup="default"
 
 echo "User: '$user' API: '$bluemix_api'"
 echo "Organization: '$organization_name'"
@@ -23,10 +25,12 @@ echo "Insert your password:"
 # How to input a password in bash shell
 # http://stackoverflow.com/questions/3980668/how-to-get-a-password-from-a-shell-script-without-echoing
 read -s password
-
-bx login -a $bluemix_api -u $user -p $password -o $organization_name -s $space_name
+bx login -a $bluemix_api -u $user -c $account -p $password -o $organization_name -s $space_name -g $resourcegroup
 
 echo "******************** START *********************************"
+echo "****** account information"
+bluemix account list
+
 echo "****** show existing spaces"
 cf spaces
 echo "****** show existing apps *********"
@@ -41,7 +45,7 @@ echo "Create Services"
 
 echo "Create Conversation"
 bx catalog service conversation
-bx cf create-service conversation lite library-conversation
+bx cf create-service conversation free library-conversation
 
 echo "Create AppId"
 bx catalog service appid
