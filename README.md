@@ -190,3 +190,14 @@ The text "... Library Backend Server is running ..." should be displayed in your
 	**Note:** with the current configuration, the build and deploy stages will afterwards run automatically, whenever a change is pushed to the GitLab repository. If you have some time left, you may try this by introducing a simple code change and repeating the git commands *add*, *commit*, and *push* (see above).
 
 10. Open the running app's URL either from the *Continuous Delivery* tool or the App dashboard in the Bluemix console.
+
+_Note:_ You can use following command to setup your local git integration.
+        ```
+        git init
+        git remote set-url origin https://github.com/thomassuedbroecker/libraryui-v2.git
+        git add -A
+        git commit -m "init"
+        cd docs
+        chmod u+x *.sh
+        ./git-commit.sh
+        ```
