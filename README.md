@@ -37,6 +37,8 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
 ## Deploy to IBM Cloud Public
 
+### Setup your application
+
 1. Clone the app to your local environment from your terminal using the following command
 
     ```
@@ -71,11 +73,15 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
       ![](./images/nodejsapp.png)
 
-4. Create and bind an instance of the *Watson Text-to-Speech* service.
+### Create the IBM Cloud Services and bind them to your application
+
+You will create following services: *Watson Text-to-Speech*, *Watson Conversation* and *App ID*.
+
+1. Create and bind an instance of the *Watson Text-to-Speech* service.
 	* In the app dashboard, navigate to the **Overview** section.  Click **Connect new** under **Connections**.
 	* From the service catalog select the Watson Text-To-Speech Service. Leave all fields unchanged and click **Create**. You can hold off restaging the application until all services are bound.
 
-5. Now create and bind a second service instance, a *Watson Conversation* service to the app.
+2. Now create and bind a second service instance, a *Watson Conversation* service to the app.
 
     * Click **Connect new** under **Connections** again.
     * Select **Conversation** from the Bluemix Catalog in your Browser, make sure the *Free* pricing plan is selected and click **Create**. Again, you can hold off restaging the application until you finished the next step.
@@ -99,15 +105,23 @@ The text "... Library Backend Server is running ..." should be displayed in your
         //authenticate conversation service
         var workspace_id_copy = 'YOUR_WORKSPACE_ID';
         ```
-6. Create and bind an instance of the *App ID* Service on Bluemix:
+3. Create and bind an instance of the *App ID* Service on IBM Cloud Public:
 
     * Return back to the LibraryUI app's dashboard and click **Connect new** under **Connections** one more time.
     * Select the *App ID* Service from the Catalog.
     * Name your service instance (or leave unchanged) and click **Create**.
-    * You can keep the default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login cumstomization.
+    * You can keep the default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login customization.
     * Connect it to the app LibraryUI and restage the application when prompted.
 
-7. Create a toolchain for this Cloud Foundry app:
+### Deploy our application
+
+```
+    cf push LibraryUI
+```
+
+### Integrate the IBM Cloud toolchain
+
+1. Create a toolchain for this Cloud Foundry app:
 
       * In the **Overview** section of the app, click **Enable** under **Continuous Delivery**.
 
@@ -123,7 +137,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
       ![](./images/toolchaingit.png)
 
-8. Using the **Git client** in a command window on your computer, push the application code to your git repository:
+2. Using the **Git client** in a command window on your computer, push the application code to your git repository:
 
       1. Confirm your access to IBM GitLab, by pressing the button inside the IBM GitLab **confirmation mail**
 	    2. Configure and commit the git repository.
@@ -181,7 +195,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
         Paste your key in the 'Key' section and give it a relevant 'Title'.
 
-9. Go back to the Toolchain tab and open the *Continuous Delivery* tool. Trigger the **Build Stage** manually for this first time.
+3. Go back to the Toolchain tab and open the *Continuous Delivery* tool. Trigger the **Build Stage** manually for this first time.
 	* Click on the *Run Stage* icon in the **Build Stage**
 
 	![buildmanually](./images/BuildStage.png)
@@ -190,7 +204,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
 	**Note:** with the current configuration, the build and deploy stages will afterwards run automatically, whenever a change is pushed to the GitLab repository. If you have some time left, you may try this by introducing a simple code change and repeating the git commands *add*, *commit*, and *push* (see above).
 
-10. Open the running app's URL either from the *Continuous Delivery* tool or the App dashboard in the Bluemix console.
+4. Open the running app's URL either from the *Continuous Delivery* tool or the App dashboard in the Bluemix console.
 
 _Note:_ You can use following commands to setup your local git integration.
 
