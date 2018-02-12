@@ -123,23 +123,26 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
       ![](./images/toolchaingit.png)
 
-8. Using the Git client in a command window on your computer, push the application code to your git repository:
+8. Using the **Git client** in a command window on your computer, push the application code to your git repository:
 
-      1. Confirm your access to IBM GitLab, by pressing the button inside the IBM GitLab confirmation mail
+      1. Confirm your access to IBM GitLab, by pressing the button inside the IBM GitLab **confirmation mail**
 	    2. Configure and commit the git repository.
-            ```
+         Use following commands:
+
+         ```
               git config --global user.email "you@example.com"
               git config --global user.name "Your Name"
               git remote set-url origin <your-url>
               git add .
               git commit -m “first commit”
-            ```
-              1. *\<your-url\>* should be replaced by the url of the GitLab repository: Choose the HTTPS protocol and copy the URL.
+         ```
+         * *\<your-url\>* should be replaced by the url of the GitLab repository: Choose the HTTPS protocol and copy the URL.
 
                   ![gitlab-https](./images/gitlab-https.png)
 
-        	    2. *you@example.com* should be replaced with your email address (the one you used to register for Bluemix).
-        	    3. *Your name* should be replaced with your name as it should appear in Gitlab.
+         * *you@example.com* should be replaced with your email address (the one you used to register for Bluemix).
+
+         * *Your name* should be replaced with your name as it should appear in Gitlab.
 
                       ![gitlab-name](./images/gitlab-name.png)
 
@@ -157,8 +160,6 @@ The text "... Library Backend Server is running ..." should be displayed in your
           You will be asked for Username and Password. Use the name of your token as Username and the token itself as Password.
 
           ![gitlab-token-pw](./images/gitlab-token-pw.png)
-
-
 
 
     - **(OPTIONAL)** For a push via SSH you may need to add an **SSH key** to your GitLab account.
@@ -191,7 +192,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
 10. Open the running app's URL either from the *Continuous Delivery* tool or the App dashboard in the Bluemix console.
 
-_Note:_ You can use following command to setup your local git integration.
+_Note:_ You can use following commands to setup your local git integration.
 
 ```
         git init
