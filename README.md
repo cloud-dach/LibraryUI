@@ -197,6 +197,7 @@ _Note:_ You can use following command to setup your local git integration.
         git remote set-url origin https://github.com/thomassuedbroecker/libraryui-v2.git
         git add -A
         git commit -m "init"
+        git push
         cd docs
         chmod u+x *.sh
         ./git-commit.sh
