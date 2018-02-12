@@ -193,7 +193,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
 _Note:_ You can use following command to setup your local git integration.
 
-    ```
+```
         git init
         git remote set-url origin https://github.com/thomassuedbroecker/libraryui-v2.git
         git add -A
@@ -202,4 +202,4 @@ _Note:_ You can use following command to setup your local git integration.
         cd docs
         chmod u+x *.sh
         ./git-commit.sh
-     ```
+```
