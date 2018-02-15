@@ -123,6 +123,22 @@ You will create following services: *Watson Text-to-Speech*, *Watson Conversatio
 Now you will push your application into the IBM Cloud Public.
 
 ```
+    cf login -https://api.[YOUR_REGION].bluemix.net
+    Email> YOUR_EMAIL
+    Password> YOUR_PASSWORD
+    Authenticating...
+    OK
+
+    Select an org (or press enter to skip):
+    1. YOUR_ORG
+
+    Org> 1
+    Targeted org YOUR_ORG
+    Select a space (or press enter to skip):
+    1. YOUR_SPACE
+
+    Space> 1
+
     cf push LibraryUI
 ```
 

@@ -1,6 +1,6 @@
 applications:
 - name: LibraryUI
-  host: LibraryUI-[myName]
+  host: libraryui-tsuedbro
   env:
     LIBRARY_URI: "https://library-server-tsuedbro.au-syd.mybluemix.net/api"
   memory: 256M
