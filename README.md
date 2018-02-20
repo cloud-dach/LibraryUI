@@ -93,17 +93,17 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 
 	* Navigate to the **Dashboard** and click **create resource**.
 	* From the service catalog select the **Watson Text-To-Speech Service**. Leave all fields unchanged and click **Create**.
-  * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section.
+  * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section and then select **Connections**.
     ![](./images/app-dashboard.png)
   * Click **Create Connection** and select the **Text-to-Speech** service and choose **connect**.
 
-  You can hold off restaging the application until all services are bound.
+  Do not restage the application until **all** services are bound.
 
 2. Now create and bind a second service instance, a **Watson Conversation** service to the app.
 
     * Navigate to the **Dashboard** and click **create resource**
     * Select **Conversation** from the IBM Cloud Catalog in your Browser, make sure the *Free* pricing plan is selected and click **Create**.
-    * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section.
+    * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section and then select **Connections**.
     * Click **Create Connection** and select the **Conversation** service and choose **connect** again.
 
     Again, you can hold off restaging the application until you finished the next step.
@@ -132,7 +132,7 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 
     * Navigate to the **Dashboard** and click **create resource**.
   	* From the service catalog select the **App ID**. Leave all fields unchanged and click **Create**.
-    * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section.
+    * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section and then select **Connections**.
     * Click **Create Connection** and select the **Conversation** service and choose **connect** again.
 
     * You can keep the default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login customization.
