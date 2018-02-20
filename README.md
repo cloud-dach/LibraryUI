@@ -146,6 +146,8 @@ Verify your **IBM Cloud** endpoint api (the region you have chosen at the beginn
   * EU-GB:  https://api.eu-gb.bluemix.net
 
 ```
+    cd cf-hands-on-LibraryUI
+    
     cf login -a https://api.[YOUR_REGION_US_OR_EU-GB].bluemix.net
     Email> YOUR_EMAIL
     Password> YOUR_PASSWORD
