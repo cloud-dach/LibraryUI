@@ -106,7 +106,7 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
     * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section and then select **Connections**.
     * Click **Create Connection** and select the **Conversation** service and choose **connect** again.
 
-    Again, you can hold off restaging the application until you finished the next step.
+    Again, do not restage the application until **all** services are bound.
 
     * Click on the new *Conversation* service instance to open its main page. Open the **Manage** panel and click **Launch tool**.
 
