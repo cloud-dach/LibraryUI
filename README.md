@@ -47,7 +47,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 1. Clone the app to your local environment from your terminal using the following command
 
     ```
-    git clone https://github.com/thomassuedbroecker/libraryui-v2.git)
+    git clone https://github.com/cloud-dach/cf-hands-on-LibraryUI.git
     ```
 
 	 Change to the resulting directory
