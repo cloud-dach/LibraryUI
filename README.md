@@ -66,7 +66,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
       LIBRARY_URI: "https://library-server-tsuedbro.au-syd.mybluemix.net/api"
       ```
 
-    Change the host name *LibraryUI-[myName]* to something unique. For example, you can replace [myName] with your name.
+    Change the **host name** LibraryUI-**[myName]** to something unique. For example, you can replace **[myName]** with your name.
 
     ```
     applications:
