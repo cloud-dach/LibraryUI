@@ -134,8 +134,8 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
   	* From the service catalog select the **App ID**. Leave all fields unchanged and click **Create**.
     * You can keep the default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login customization.
     * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section and then select **Connections**.
-    * Click **Create Connection** and select the **Conversation** service and choose **connect** again.
-    * Connect it to the app LibraryUI and restage the application when prompted.
+    * Click **Create Connection** and select the **App ID** service and choose **connect** again.
+    * Connect it to the app LibraryUI and **NOW YOU CAN :-)** restage the application when prompted.
 
 ### 3. Deploy our application
 
