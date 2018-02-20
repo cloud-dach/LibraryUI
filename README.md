@@ -85,16 +85,27 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
 ### 2. Create the IBM Cloud Services and bind them to your application
 
-You will create following services: **Watson Text-to-Speech**, **Watson Conversation** and **App ID**.
+You will create following services: **Watson Text-to-Speech**, **Watson Conversation** and **App ID** form the dashboard using create resource.
+
+![](./images/create-resource.png)
 
 1. Create and bind an instance of the **Watson Text-to-Speech** service.
-	* In the app dashboard, navigate to the **Overview** section.  Click **Connect new** under **Connections**.
-	* From the service catalog select the Watson Text-To-Speech Service. Leave all fields unchanged and click **Create**. You can hold off restaging the application until all services are bound.
+
+	* In the catalog, navigate to the **Dashboard** and click **create resource**.
+	* From the service catalog select the **Watson Text-To-Speech Service**. Leave all fields unchanged and click **Create**.
+  * Open the **app dashboard**, navigate to the **Overview** section.  Click **Create Connect** under **Connections**.
+
+  You can hold off restaging the application until all services are bound.
 
 2. Now create and bind a second service instance, a **Watson Conversation** service to the app.
 
+    * In the catalog, navigate to the **Dashboard** and click **create resource**
+    * Select **Conversation** from the IBM Cloud Catalog in your Browser, make sure the *Free* pricing plan is selected and click **Create**.
+    * In the **app dashboard**, navigate to the **Overview** section.  Click **Create Connection**.
     * Click **Connect new** under **Connections** again.
-    * Select **Conversation** from the Bluemix Catalog in your Browser, make sure the *Free* pricing plan is selected and click **Create**. Again, you can hold off restaging the application until you finished the next step.
+
+    Again, you can hold off restaging the application until you finished the next step.
+
     * Click on the new *Conversation* service instance to open its main page. Open the **Manage** panel and click **Launch tool**.
 
         ![Launch](./images/launch-conv.png)
