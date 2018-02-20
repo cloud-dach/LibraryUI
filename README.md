@@ -145,6 +145,8 @@ Verify your **IBM Cloud** endpoint api (the region you have chosen at the beginn
   * US:     https://api.ng.bluemix.net
   * EU-GB:  https://api.eu-gb.bluemix.net
 
+_Note:_ If you use a **federated userid** you must add the option **--sso** to the login command, to get a one time token.
+
 ```
     cd cf-hands-on-LibraryUI
     
