@@ -141,8 +141,9 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 
 Now you will push your application into the IBM Cloud Public.
 Verify your "IBM Cloud endpoint api" (region), for example
-    * US https://api.ng.bluemix.net or
-    * EU-GB https://api.eu-gb.bluemix.net
+
+    * US:     https://api.ng.bluemix.net
+    * EU-GB:  https://api.eu-gb.bluemix.net
 
 ```
     cf login -a https://api.[YOUR_REGION].bluemix.net
