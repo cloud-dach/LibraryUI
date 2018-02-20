@@ -57,7 +57,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
 
 	 Change to the resulting directory
   	```
-    	cd libraryui-v2
+    	cd cf-hands-on-LibraryUI
   	```
 
 2. Open the file **manifest.yml** and change the entry **"LIBRARY_URI"** to the URL of the existing backend server, extended by **"/api"**. It should look like this:
