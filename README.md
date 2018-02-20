@@ -91,20 +91,20 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 
 1. Create and bind an instance of the **Watson Text-to-Speech** service.
 
-	* In the catalog, navigate to the **Dashboard** and click **create resource**.
+	* Navigate to the **Dashboard** and click **create resource**.
 	* From the service catalog select the **Watson Text-To-Speech Service**. Leave all fields unchanged and click **Create**.
-  * Open the **app dashboard**, navigate to the **Overview** section.
-  ![](./images/app-dashboard.png)
-  * Click **Create Connect** under **Connections**.
+  * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section.
+    ![](./images/app-dashboard.png)
+  * Click **Create Connection** and select the **Text-to-Speech** service and choose **connect**.
 
   You can hold off restaging the application until all services are bound.
 
 2. Now create and bind a second service instance, a **Watson Conversation** service to the app.
 
-    * In the catalog, navigate to the **Dashboard** and click **create resource**
+    * Navigate to the **Dashboard** and click **create resource**
     * Select **Conversation** from the IBM Cloud Catalog in your Browser, make sure the *Free* pricing plan is selected and click **Create**.
-    * In the **app dashboard**, navigate to the **Overview** section.  Click **Create Connection**.
-    * Click **Connect new** under **Connections** again.
+    * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section.
+    * Click **Create Connection** and select the **Conversation** service and choose **connect** again.
 
     Again, you can hold off restaging the application until you finished the next step.
 
@@ -130,9 +130,11 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
         ```
 3. Create and bind an instance of the *App ID* Service on IBM Cloud Public:
 
-    * Return back to the LibraryUI app's dashboard and click **Connect new** under **Connections** one more time.
-    * Select the *App ID* Service from the Catalog.
-    * Name your service instance (or leave unchanged) and click **Create**.
+    * Navigate to the **Dashboard** and click **create resource**.
+  	* From the service catalog select the **App ID**. Leave all fields unchanged and click **Create**.
+    * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section.
+    * Click **Create Connection** and select the **Conversation** service and choose **connect** again.
+
     * You can keep the default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login customization.
     * Connect it to the app LibraryUI and restage the application when prompted.
 
