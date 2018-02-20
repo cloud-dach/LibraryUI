@@ -2,6 +2,10 @@
 
 This is the second part of the Library Application: [https://github.com/florae123/LibraryApp-user](https://github.com/florae123/LibraryApp-user).
 
+Watch the video on YouTube for further information about this application.
+_Note:_ That the video refers to an older version of the demo app https://www.youtube.com/watch?v=NqF2wIMBqBw.
+
+
 This part consists of a Node.js server and the web UI.
 It is built using HTML, CSS, Bootstrap, jQuery, and a Watson Text-To-Speech Service, a Watson Conversation Service as well as the App ID Service on Bluemix.
 
