@@ -2,7 +2,8 @@
 
 This is the second part of the Library Application: [https://github.com/florae123/LibraryApp-user](https://github.com/florae123/LibraryApp-user).
 
-Watch the video on YouTube for further information about this application.
+Watch the video on **YouTube** for further information about this application.
+
 _Note:_ That the video refers to an older version of the demo app https://www.youtube.com/watch?v=NqF2wIMBqBw.
 
 
