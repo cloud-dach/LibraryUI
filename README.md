@@ -140,13 +140,13 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 ### 3. Deploy our application
 
 Now you will push your application into the IBM Cloud Public.
-Verify your "IBM Cloud endpoint api" (region), for example
+Verify your **IBM Cloud** endpoint api (the region you have chosen at the beginning when you created your libraryUI application ).
 
-    * US:     https://api.ng.bluemix.net
-    * EU-GB:  https://api.eu-gb.bluemix.net
+  * US:     https://api.ng.bluemix.net
+  * EU-GB:  https://api.eu-gb.bluemix.net
 
 ```
-    cf login -a https://api.[YOUR_REGION].bluemix.net
+    cf login -a https://api.[YOUR_REGION_US_OR_EU-GB].bluemix.net
     Email> YOUR_EMAIL
     Password> YOUR_PASSWORD
     Authenticating...
