@@ -20,7 +20,7 @@ To create an app for the cloud, in this lab you will use an open toolchain in th
 * Any text editor (like Eclipse, Atom, Brackets, vim … or whatever you prefer)
 * Git client ([Download here](https://git-scm.com/downloads))
 
-  Another requirement is an [IBM Bluemix Account](https://console.bluemix.net/registration).
+  Another requirement is an [IBM Cloud Account](https://console.bluemix.net/registration).
 
 ### Library server (Java Backend)
 For the sake of time, you will not create the Library service on your own during this lab, but instead use an instance provided to you.
@@ -149,7 +149,7 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 
 ```
     cd cf-hands-on-LibraryUI
-    
+
     cf login -a https://api.[YOUR_REGION_US_OR_EU-GB].bluemix.net
     Email> YOUR_EMAIL
     Password> YOUR_PASSWORD
@@ -200,13 +200,14 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
               git add .
               git commit -m “first commit”
          ```
-         * *\<your-url\>* should be replaced by the url of the GitLab repository: Choose the HTTPS protocol and copy the URL.
+         
+      * *\<your-url\>* should be replaced by the url of the GitLab repository: Choose the HTTPS protocol and copy the URL.
 
                   ![gitlab-https](./images/gitlab-https.png)
 
-         * *you@example.com* should be replaced with your email address (the one you used to register for Bluemix).
+      * *you@example.com* should be replaced with your email address (the one you used to register for Bluemix).
 
-         * *Your name* should be replaced with your name as it should appear in Gitlab.
+      * *Your name* should be replaced with your name as it should appear in Gitlab.
 
                       ![gitlab-name](./images/gitlab-name.png)
 
@@ -256,11 +257,11 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 
 4. Open the running app's URL either from the *Continuous Delivery* tool or the App dashboard in the Bluemix console.
 
-_Note:_ You can use following commands to setup your local git integration.
+_Note:_ You can use following commands to setup your local remote git integration.
 
 ```
         git init
-        git remote set-url origin https://github.com/thomassuedbroecker/libraryui-v2.git
+        git remote set-url origin YOUR_GIT_URL
         git add -A
         git commit -m "init"
         git push
