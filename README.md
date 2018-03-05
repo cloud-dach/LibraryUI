@@ -1,6 +1,6 @@
 # LibraryUI
 
-This is the second part of the Library Application: [https://github.com/florae123/LibraryApp-user](https://github.com/florae123/LibraryApp-user).
+This is the second part of the Library Application: [https://github.com/cloud-dach/cf-hands-on-library](https://github.com/cloud-dach/cf-hands-on-library).
 
 Watch the video on **YouTube** for further information about this application.
 
