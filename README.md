@@ -213,10 +213,13 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
       3. For a push via https  protocol you need to generate a personal access token with 'api' scope for Git over HTTP. You can generate one at
 
       https://git. **[YOUR-REGION]** .bluemix.net/profile/personal_access_tokens
-      _Example:_ https://git.ng.bluemix.net/profile/personal_access_tokens
+
+      _Example URL for the IBM GitLab in the US-Region:_
+      https://git.ng.bluemix.net/profile/personal_access_tokens
+
       ![gitlab-token](./images/gitlab-token.png)
 
-          Copy and save the token, and remember the name you picked.
+          Copy and **save the token**, and remember the name you picked.
 
       4. Push the code to GitLab.
 
