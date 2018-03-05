@@ -193,13 +193,14 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 	    2. Configure and commit the git repository.
          Use following commands:
 
-         ```
-              git config --global user.email "you@example.com"
-              git config --global user.name "Your Name"
-              git remote set-url origin <your-url>
-              git add .
-              git commit -m “first commit”
-         ```
+          ```
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git init
+          git remote set-url origin <your-url>
+          git add .
+          git commit -m “first commit”
+          ```
 
       * *\<your-url\>* should be replaced by the url of the GitLab repository: Choose the HTTPS protocol and copy the URL.
       ![gitlab-https](./images/gitlab-https.png)
