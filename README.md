@@ -214,8 +214,7 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 
       https://git. **[YOUR-REGION]** .bluemix.net/profile/personal_access_tokens
       _Example:_ https://git.ng.bluemix.net/profile/personal_access_tokens
-
-          ![gitlab-token](./images/gitlab-token.png)
+      ![gitlab-token](./images/gitlab-token.png)
 
           Copy and save the token, and remember the name you picked.
 
