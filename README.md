@@ -193,14 +193,15 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 	    2. Configure and commit the git repository.
          Use following commands:
 
-        ```
+      ```
           cd YOUR_PROJECT_PATH
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
           git remote set-url origin <your-url>
           git add .
-          git commit -m “first commit”
-        ```
+          git commit -m "first commit"
+      ```
+
       _Note:_ If you get the error **fatal: No such remote 'origin'** use following steps.
       ```
         git init
