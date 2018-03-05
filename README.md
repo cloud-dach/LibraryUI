@@ -251,8 +251,8 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 
         Paste your key in the 'Key' section and give it a relevant 'Title'.
 
-3. Go back to the Toolchain tab and open the *Continuous Delivery* tool. Trigger the **Build Stage** manually for this first time.
-	* Click on the *Run Stage* icon in the **Build Stage**
+3. Go back to the Toolchain tab and open the **Continuous Delivery** tool. Trigger the **Build Stage** manually for this first time.
+	* Click on the **Run Stage** icon in the **Build Stage**
 
 	![buildmanually](./images/BuildStage.png)
 
