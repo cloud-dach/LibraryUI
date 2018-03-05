@@ -210,7 +210,10 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
       * *Your name* should be replaced with your name as it should appear in Gitlab.
       ![gitlab-name](./images/gitlab-name.png)
 
-      3. For a push via https  protocol you need to generate a personal access token with 'api' scope for Git over HTTP. You can generate one at https://git.ng.bluemix.net/profile/personal_access_tokens
+      3. For a push via https  protocol you need to generate a personal access token with 'api' scope for Git over HTTP. You can generate one at
+
+      https://git. **[YOUR-REGION]** .bluemix.net/profile/personal_access_tokens
+      _Example:_ https://git.ng.bluemix.net/profile/personal_access_tokens
 
           ![gitlab-token](./images/gitlab-token.png)
 
