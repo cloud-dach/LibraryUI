@@ -202,12 +202,6 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
           git commit -m "first commit"
       ```
 
-      _Note:_ If you get the error **fatal: No such remote 'origin'** use following steps.
-      ```
-        git init
-        git remote add origin <your-url>
-      ```
-
       * *\<your-url\>* should be replaced by the url of the GitLab repository: Choose the HTTPS protocol and copy the URL.
       ![gitlab-https](./images/gitlab-https.png)
 
@@ -265,12 +259,19 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 _Note:_ You can use following commands to setup your local remote git integration.
 
 ```
-        git init
-        git remote set-url origin YOUR_GIT_URL
-        git add -A
-        git commit -m "init"
-        git push
-        cd docs
-        chmod u+x *.sh
-        ./git-commit.sh
+   git init
+   git remote set-url origin YOUR_GIT_URL
+   git add -A
+   git commit -m "init"
+   git push
+   cd docs
+   chmod u+x *.sh
+   ./git-commit.sh
+```
+
+_Note:_ If you get the error **fatal: No such remote 'origin'** use following steps.
+
+```
+  git init
+  git remote add origin <your-url>
 ```
