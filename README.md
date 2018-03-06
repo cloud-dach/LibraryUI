@@ -169,7 +169,7 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
     cf push LibraryUI
 ```
 
-### 4. Integrate the IBM Cloud toolchain
+### 4. Optional - Integrate the IBM Cloud toolchain
 
 1. Create a toolchain for this Cloud Foundry app:
 
