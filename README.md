@@ -171,7 +171,7 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 
 ### 4. Optional - Integrate the IBM Cloud toolchain
 
-After the integration into the **IBM Cloud toolchain** a code change library application in gitlab  will be directly build and deployed into the IBM Cloud. 
+After the integration into the **IBM Cloud toolchain** a code change in library application on gitlab, will trigger a directly build and deploy into the IBM Cloud of the Node.JS application. 
 
 1. Create a toolchain for this Cloud Foundry app:
 
