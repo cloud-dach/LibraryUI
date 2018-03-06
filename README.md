@@ -25,7 +25,7 @@ To create an app for the cloud, in this lab you will use an open toolchain in th
 ### Library server (Java Backend)
 For the sake of time, you will not create the Library service on your own during this lab, but instead use an instance provided to you.
 
-If you are interested in how to create the Library service and want to do that yourself – AFTER this workshop – refer to the git repo [https://github.com/thomassuedbroecker/library-server-java-v2](https://github.com/thomassuedbroecker/library-server-java-v2.git).
+If you are interested in how to create the Library service and want to do that yourself – AFTER this workshop – refer to the git repo [https://github.com/cloud-dach/cf-hands-on-LibraryServer](https://github.com/cloud-dach/cf-hands-on-LibraryServer.git).
 
 Note, that all workshop participants will share the same Library service instance. During the test, you might experience data changes introduced by other participants. The “library” is open to all registered users.
 
