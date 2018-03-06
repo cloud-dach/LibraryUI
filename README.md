@@ -171,7 +171,7 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 
 ### 4. Optional - Integrate the IBM Cloud toolchain
 
-After the integration into the **IBM Cloud toolchain** a code change in library application on gitlab, will trigger a directly build and deploy into the IBM Cloud of the Node.JS application. 
+After the integration into the **IBM Cloud toolchain** a code change in library application on gitlab, will trigger a directly build and deploy into the IBM Cloud of the Node.JS application.
 
 1. Create a toolchain for this Cloud Foundry app:
 
@@ -263,6 +263,9 @@ After the integration into the **IBM Cloud toolchain** a code change in library 
 	**Note:** with the current configuration, the build and deploy stages will afterwards run automatically, whenever a change is pushed to the GitLab repository. If you have some time left, you may try this by introducing a simple code change and repeating the git commands *add*, *commit*, and *push* (see above).
 
 4. Open the running app's URL either from the *Continuous Delivery* tool or the App dashboard in the Bluemix console.
+---
+
+## Addional Information
 
 _Note:_ You can use following commands to setup your local remote git integration.
 
