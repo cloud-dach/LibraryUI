@@ -168,6 +168,11 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
 
     cf push LibraryUI
 ```
+Success!
+
+Now your LibraryUI application is running on the internet and you can access the application from your defined URL inside the Node.JS server instance.
+
+For example: https://library-server-tsuedbro.au-syd.mybluemix.net/
 
 ### 4. Optional - Integrate the IBM Cloud toolchain
 
