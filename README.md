@@ -79,7 +79,7 @@ The text "... Library Backend Server is running ..." should be displayed in your
     ```
 
 3.  Login to bluemix.net and create a Node.JS Cloud Foundry App.
-      Give it the same name (**LibraryUI**) and host name as defined in the **manifest.yml** file.
+      Give it the same _app_name_ (**LibraryUI**) and _host_name_ as defined in the **manifest.yml** file.
 
       ![](./images/nodejsapp.png)
 
