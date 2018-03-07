@@ -122,7 +122,7 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
         ![details](./images/workspace-id.png)
 
     * Copy the **Workspace ID** to the clipboard.
-    * Replace it with the current value for *workspace_id_copy* in line 126 in **server.js**.
+    * Replace it with the current value for *workspace_id_copy* in line 126 in **server.js** file. Located in the path cf-hands-on-LibraryUI/**server.js**
 
         ```
         //authenticate conversation service
