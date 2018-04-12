@@ -99,16 +99,16 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 
   Do not restage the application until **all** services are bound.
 
-2. Now create and bind a second service instance, a **Watson Conversation** service to the app.
+2. Now create and bind a second service instance, a **Watson Assistant** service to the app.
 
     * Navigate to the **Dashboard** and click **create resource**
-    * Select **Conversation** from the IBM Cloud Catalog in your Browser, make sure the *Free* pricing plan is selected and click **Create**.
+    * Select **Watson Assistant** from the IBM Cloud Catalog in your Browser, make sure the *Free* pricing plan is selected and click **Create**.
     * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section and then select **Connections**.
     * Click **Create Connection** and select the **Conversation** service and choose **connect** again.
 
     Again, do not restage the application until **all** services are bound.
 
-    * Click on the new *Conversation* service instance to open its main page. Open the **Manage** panel and click **Launch tool**.
+    * Click on the new *Watson Assistant* service instance to open its main page. Open the **Manage** panel and click **Launch tool**.
 
         ![Launch](./images/launch-conv.png)
 
@@ -132,9 +132,39 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 
     * Navigate to the **Dashboard** and click **create resource**.
   	* From the service catalog select the **App ID**. Leave all fields unchanged and click **Create**.
-    * You can keep the default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login customization.
+    * After the creation you will notice there will be two entries in the Dashboard one under Cloud Foundry Services and one under Services. The Service in **Cloud Foundry Services** is only a *alias* which points to the service under *Services*, which are the IAM (ID and Access Management) enabled services. This the reason why you will be asked to define a *IAM access role* for the service. Here you can choose **reader**.
+
+    ![APP ID](./images/import-workspace-2.png)
+
+    * If you open the APP ID Service you will get a reminder:
+
+    _" We had tighten the validation for web redirect URL! If you are using this App ID instance with web apps then you must ensure that appropriate URL-s are listed under the "Manage" section in the "Identity Providers" tabs. If not done, then your app users will not be able to sign-in to your web app. "_
+
+    * Under **Manage** switch of the **Cloud Directory** and **SAML 2.0 Federation**
+
+    ![APP ID](./images/import-workspace-2.png)
+
+    * Add the **web redirect URL**
+
+    In our case you can use this two ULRs:
+
+    + **https://[YOUR_HOSTNAME].ng.mybluemix.net/ibm/bluemix/appid/callback**
+    + **https://[YOUR_HOSTNAME].ng.mybluemix.net**
+
+    ![APP ID](./images/import-workspace-3.png)
+
+    _Note:_ [YOUR_HOSTNAME] you have defined in the **manifest.yml** befor.
+    ```
+    applications:
+    - name: LibraryUI
+      host: libraryui-[myName]
+    ```
+
+    * You can keep the remaining default configurations under *Identity Providers*, *Login Customization* and *Profiles*. Or you can adjust them as you choose, for example by uploading the image **views/images/bookshelf.jpg** in the login customization.
     * Click on the LibraryUI Node.JS application to open the **app dashboard**, navigate to the **Overview** section and then select **Connections**.
     * Click **Create Connection** and select the **App ID** service and choose **connect** again.
+    * Here you can add the Service under **Cloud Foundry Services** remember this only a *alias* which points to the service under *Services*. But it will provide the needed Credentials using in the VCAP for the Cloud Foundry application.
+
     * Connect it to the app LibraryUI and **NOW YOU CAN :-)** restage the application when prompted.
 
 ### 3. Deploy our application
@@ -147,7 +177,7 @@ Verify your **IBM Cloud** endpoint api (the region you have chosen at the beginn
 
 _Note:_ If you use a **federated userid** you must add the option **--sso** to the login command, to get a one time token.
 
-```
+    ```
     cd cf-hands-on-LibraryUI
 
     cf login -a https://api.[YOUR_REGION_US_OR_EU-GB].bluemix.net
@@ -167,7 +197,7 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
     Space> 1
 
     cf push LibraryUI
-```
+    ```
 Success!
 
 Now your LibraryUI application is running on the internet and you can access the application from your defined URL inside the Node.JS server instance.
@@ -201,12 +231,12 @@ After the integration into the **IBM Cloud toolchain** a code change in library 
          Use following commands:
 
       ```
-          cd YOUR_PROJECT_PATH
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git remote set-url origin <your-url>
-          git add .
-          git commit -m "first commit"
+        cd YOUR_PROJECT_PATH
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        git remote set-url origin <your-url>
+        git add .
+        git commit -m "first commit"
       ```
 
       * *\<your-url\>* should be replaced by the url of the GitLab repository: Choose the HTTPS protocol and copy the URL.
