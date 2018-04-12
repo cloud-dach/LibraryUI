@@ -134,7 +134,7 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
   	* From the service catalog select the **App ID**. Leave all fields unchanged and click **Create**.
     * After the creation you will notice there will be two entries in the Dashboard one under Cloud Foundry Services and one under Services. The Service in **Cloud Foundry Services** is only a *alias* which points to the service under *Services*, which are the IAM (ID and Access Management) enabled services. This the reason why you will be asked to define a *IAM access role* for the service. Here you can choose **reader**.
 
-    ![APP ID](./images/import-workspace-2.png)
+    ![APP ID 1](./images/app-id-01.png)
 
     * If you open the APP ID Service you will get a reminder:
 
@@ -142,7 +142,7 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
 
     * Under **Manage** switch of the **Cloud Directory** and **SAML 2.0 Federation**
 
-    ![APP ID](./images/import-workspace-2.png)
+    ![APP ID 2](./images/app-id-02.png)
 
     * Add the **web redirect URL**
 
@@ -151,7 +151,7 @@ You will create following services: **Watson Text-to-Speech**, **Watson Conversa
     + **https://[YOUR_HOSTNAME].ng.mybluemix.net/ibm/bluemix/appid/callback**
     + **https://[YOUR_HOSTNAME].ng.mybluemix.net**
 
-    ![APP ID](./images/import-workspace-3.png)
+    ![APP ID 3](./images/app-id-03.png)
 
     _Note:_ [YOUR_HOSTNAME] you have defined in the **manifest.yml** befor.
     ```
