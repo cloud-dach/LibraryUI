@@ -177,7 +177,7 @@ Verify your **IBM Cloud** endpoint api (the region you have chosen at the beginn
 
 _Note:_ If you use a **federated userid** you must add the option **--sso** to the login command, to get a one time token.
 
-    ```
+```
     cd cf-hands-on-LibraryUI
 
     cf login -a https://api.[YOUR_REGION_US_OR_EU-GB].bluemix.net
@@ -197,10 +197,11 @@ _Note:_ If you use a **federated userid** you must add the option **--sso** to t
     Space> 1
 
     cf push LibraryUI
-    ```
-Success!
+```
 
-Now your LibraryUI application is running on the internet and you can access the application from your defined URL inside the Node.JS server instance.
+**Success! The App is running!**
+
+Now your LibraryUI application is **running** on the internet and you can access the application from your defined URL inside the Node.JS server instance.
 
 For example: https://library-server-tsuedbro.au-syd.mybluemix.net/
 
